@@ -1,0 +1,152 @@
+/* Write comments so that next developer ( killer psycopath who knows where you stay ) ... */
+/* .... who is going to maintain this need have to get back to you */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: hsl(217, 39%, 21%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 32px auto auto auto;
+  /* max-height: 40%; */
+  /* border: 3px solid red; */
+}
+
+/* Keep DRY */
+.flexbox-item {
+  width: 350px;
+  margin: 10px;
+  /* border: 1px solid #333; */
+  margin: auto;
+  padding: 30px;
+  background-color: hsl(217, 41%, 36%);
+}
+
+/* -------------------- */
+.flexbox-item-1 {
+  min-height: 80px;
+  flex-basis: 350px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 35px 35px 0 0;
+}
+
+.equilibrium-image-container {
+  width: 100%;
+  height: 100%;
+  min-height: 30px;
+  margin: auto;
+}
+
+.equilibrium-image-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* min-height: 10px; */
+  /* padding: 15px; */
+  /* margin: auto; */
+  border-radius: 35px;
+}
+
+/* -------------------- */
+.flexbox-item-2 {
+  min-height: 60px;
+  flex-basis: 150px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.info-section-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  gap: 32px;
+}
+
+.image-value-container {
+  display: flex;
+  width: 320px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image-value-container svg {
+  margin-right: 16px;
+}
+
+.etherium-image-and-value {
+  margin-right: 100px;
+}
+
+/* -------------------- */
+hr {
+  margin: -30px;
+  padding: -100px;
+  /* border: 1px solid white; */
+}
+
+/* -------------------- */
+.flexbox-item-3 {
+  margin: -30px auto auto auto;
+  min-height: 20px;
+  flex-basis: 30px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 0 0 35px 35px;
+}
+
+.avatar-image-and-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  height: 100%; /* center the div */
+  /* height: 50px; */
+  /* border: 2px solid green; */
+  /* gap: 32px;
+  margin: 20px auto;
+  padding: 15px; */
+  /* border: 2px solid goldenrod; */
+}
+
+.avatar-image-container {
+  width: 40px;
+  height: 40px;
+  margin-left: 0%;
+  margin-right: 10px;
+  /* margin: 20px auto;
+    padding: 15px; */
+}
+
+.avatar-image-container img {
+  width: 100%;
+  height: 100%;
+  /* margin: auto; */
+}
+
+/* -------------------- */
+/* Should always stick to bottom of page and should be centered */
+footer {
+  /* min-height: 40px;
+  margin: auto;
+  padding-bottom: 0.5em; */
+  /* flex-shrink: 0; */
+  /* height: 50px;
+  margin-top: -50px; */
+  flex-shrink: 0;
+  /* margin-top: 100px; */
+  margin: 100px auto auto auto;
+}
