@@ -1,5 +1,5 @@
-/* Write comments so that next developer ( killer psycopath who knows where you stay ) ... */
-/* .... who is going to maintain this need have to get back to you */
+/* Write GOOD comments so that next developer ( killer psycopath who knows where you stay ) ... */
+/* .... who is going to maintain this code; need NOT have to get back to you */
 
 * {
   margin: 0;
@@ -28,7 +28,7 @@ body {
   margin: 10px;
   /* border: 1px solid #333; */
   margin: auto;
-  padding: 30px;
+  padding: 20px;
   background-color: hsl(217, 41%, 36%);
 }
 
@@ -38,7 +38,7 @@ body {
   flex-basis: 350px;
   flex-grow: 0;
   flex-shrink: 0;
-  border-radius: 35px 35px 0 0;
+  border-radius: 20px 20px 0 0;
 }
 
 .equilibrium-image-container {
@@ -55,7 +55,7 @@ body {
   /* min-height: 10px; */
   /* padding: 15px; */
   /* margin: auto; */
-  border-radius: 35px;
+  border-radius: 20px;
 }
 
 /* -------------------- */
@@ -64,6 +64,25 @@ body {
   flex-basis: 150px;
   flex-grow: 0;
   flex-shrink: 0;
+  padding-top: 0px;
+}
+
+.info-section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-section-1 h3 {
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.info-section-1 p {
+  font-size: 1.2em;
+  color: hsl(215, 51%, 70%);
+  line-height: 26px;
 }
 
 .info-section-2 {
@@ -71,7 +90,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 10px auto;
+  margin: 20px auto 30px auto;
   gap: 32px;
 }
 
@@ -87,24 +106,32 @@ body {
 }
 
 .etherium-image-and-value {
-  margin-right: 100px;
+  margin-right: 40px;
 }
 
-/* -------------------- */
-hr {
-  margin: -30px;
-  padding: -100px;
-  /* border: 1px solid white; */
+.etherium-image-and-value h5 {
+  font-size: 1em;
+  color: aqua;
+}
+
+.timer-image-and-value p {
+  font-size: 1.1em;
+  color: hsl(215, 51%, 70%);
 }
 
 /* -------------------- */
 .flexbox-item-3 {
-  margin: -30px auto auto auto;
+  padding: 10px 20px;
+}
+
+/* -------------------- */
+.flexbox-item-4 {
   min-height: 20px;
   flex-basis: 30px;
   flex-grow: 0;
   flex-shrink: 0;
-  border-radius: 0 0 35px 35px;
+  border-radius: 0 0 20px 20px;
+  padding-bottom: 40px;
 }
 
 .avatar-image-and-name {
@@ -114,12 +141,6 @@ hr {
   align-items: center;
   margin: auto;
   height: 100%; /* center the div */
-  /* height: 50px; */
-  /* border: 2px solid green; */
-  /* gap: 32px;
-  margin: 20px auto;
-  padding: 15px; */
-  /* border: 2px solid goldenrod; */
 }
 
 .avatar-image-container {
@@ -127,14 +148,20 @@ hr {
   height: 40px;
   margin-left: 0%;
   margin-right: 10px;
-  /* margin: 20px auto;
-    padding: 15px; */
 }
 
 .avatar-image-container img {
   width: 100%;
   height: 100%;
-  /* margin: auto; */
+}
+
+.avatar-image-and-name p {
+  color: hsl(215, 51%, 70%);
+}
+
+.avatar-image-and-name span {
+  color: aliceblue;
+  margin-left: 5px;
 }
 
 /* -------------------- */
@@ -148,5 +175,13 @@ footer {
   margin-top: -50px; */
   flex-shrink: 0;
   /* margin-top: 100px; */
-  margin: 100px auto auto auto;
+  margin: 60px auto auto auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
