@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+/* Write GOOD comments so that next developer ( killer psycopath who knows where you stay ) ... */
+/* .... who is going to maintain this code; need NOT have to get back to you */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap");
 
 * {
   margin: 0;
@@ -7,67 +10,85 @@
 }
 
 :root {
-  --bg-color: hsl(212, 45%, 89%);
-  --card-bg-color: hsl(0, 0%, 100%);
+  --bg-color: hsl(217, 39%, 21%);
+  --card-bg-color: hsl(217, 41%, 36%);
   --card-title-color: hsl(218, 44%, 22%);
   --card-content-color: hsl(220, 15%, 55%);
   --font-family: "Outfit", sans-serif;
+  --border-radius: 1.25em;
 }
 
 body {
-  height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  /* border: 2px solid blueviolet; */
+  height: 100vh;
+  background-color: var(--bg-color);
 }
 
 .card {
-  height: 85%;
-  width: 25%;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid red;
+  margin: 2em auto auto auto;
 }
 
-/* Child 1 */
+/* Keep DRY */
+.flexbox-item {
+  width: 21.875em;
+  margin: auto;
+  padding: 1.25em;
+  background-color: var(--card-bg-color);
+}
+
+/* -------------------- */
+.flexbox-item-1 {
+  min-height: 5em;
+  flex-basis: 21.875em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
 .equilibrium-image-container {
   width: 100%;
-  height: 90%;
-  /* border: 2px solid goldenrod; */
+  height: 100%;
+  min-height: 1.875em;
   margin: auto;
 }
 
 .equilibrium-image-container img {
-  /* width: 100%;
-  margin: 0.5em; */
+  display: block;
   width: 100%;
   height: 100%;
-  padding: 15px;
-  margin: auto;
-  border-radius: 35px;
+  border-radius: var(--border-radius);
 }
 
-/* Child 2 */
-.info-section {
-  margin: 20px auto;
-  padding: 15px;
-  /* border: 2px solid goldenrod; */
+/* -------------------- */
+.flexbox-item-2 {
+  min-height: 3.75em;
+  flex-basis: 9.375em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-top: 0em;
 }
 
 .info-section-1 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+}
+
+.info-section-1 h3 {
+  color: white;
+  font-family: var(--font-family);
+  font-size: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.info-section-1 p {
+  font-family: var(--font-family);
+  font-size: 1.2em;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.625em;
 }
 
 .info-section-2 {
@@ -75,56 +96,91 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 10px auto;
-  gap: 32px;
+  margin: 1.25em auto 1.875em auto;
+  gap: 2em;
 }
 
-/* Child 3 */
+.image-value-container {
+  display: flex;
+  width: 20em;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.image-value-container svg {
+  margin-right: 1em;
+}
+
+.etherium-image-and-value {
+  margin-right: 2.5em;
+}
+
+.etherium-image-and-value h5 {
+  font-size: 1em;
+  color: aqua;
+}
+
+.timer-image-and-value p {
+  font-size: 1.1em;
+  color: hsl(215, 51%, 70%);
+}
+
+/* -------------------- */
+.flexbox-item-3 {
+  padding: 0.625em 1.25em;
+}
+
+/* -------------------- */
+.flexbox-item-4 {
+  min-height: 1.25em;
+  flex-basis: 1.875em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  padding-bottom: 2.5em;
+}
+
 .avatar-image-and-name {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  /* height: 50px; */
-  /* border: 2px solid green; */
-  gap: 32px;
-  margin: 20px auto;
-  padding: 15px;
-  /* border: 2px solid goldenrod; */
+  margin: auto;
+  height: 100%; /* center the div */
 }
 
 .avatar-image-container {
-  width: 20px;
-  height: 20px;
-  /* margin: 20px auto;
-  padding: 15px; */
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 0%;
+  margin-right: 0.625em;
 }
 
 .avatar-image-container img {
   width: 100%;
   height: 100%;
-  margin: auto;
 }
 
+.avatar-image-and-name p {
+  color: hsl(215, 51%, 70%);
+}
+
+.avatar-image-and-name span {
+  color: aliceblue;
+  margin-left: 0.313em;
+}
+
+/* -------------------- */
+/* Should always stick to bottom of page and should be centered */
 footer {
-  min-height: 40px;
-  margin: auto;
-  padding-bottom: 0.5em;
+  flex-shrink: 0;
+  margin: 3.75em auto auto auto;
 }
 
-/* main {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.attribution {
+  font-size: 0.688em;
+  text-align: center;
 }
-
-.card {
-  max-width: 20%;
-  max-height: 40%;
-} */
-
-/* <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> */
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
