@@ -4,9 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap");
 
 * {
+  --font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -14,7 +15,6 @@
   --card-bg-color: hsl(217, 41%, 36%);
   --card-title-color: hsl(218, 44%, 22%);
   --card-content-color: hsl(220, 15%, 55%);
-  --font-family: "Outfit", sans-serif;
   --border-radius: 1.25em;
 }
 
@@ -25,10 +25,17 @@ body {
   background-color: var(--bg-color);
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .card {
   display: flex;
   flex-direction: column;
-  margin: 2em auto auto auto;
+  margin: auto;
 }
 
 /* Keep DRY */
@@ -172,7 +179,7 @@ body {
 
 /* -------------------- */
 /* Should always stick to bottom of page and should be centered */
-footer {
+/* footer {
   flex-shrink: 0;
   margin: 3.75em auto auto auto;
 }
@@ -183,4 +190,4 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
