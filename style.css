@@ -118,9 +118,10 @@ main {
   margin-right: 1em;
 }
 
-.etherium-image-and-value {
+/* would be that the margin-right: 2.5em; on the .etherium-image-and-value element is causing a lack of space on the row a squashing the content horizontally. You’re using justify-content: space-between; on the parent, so you don’t need it anyway. */
+/* .etherium-image-and-value {
   margin-right: 2.5em;
-}
+} */
 
 .etherium-image-and-value h5 {
   font-size: 1em;
