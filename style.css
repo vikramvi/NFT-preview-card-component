@@ -25,13 +25,6 @@ body {
   background-color: var(--bg-color);
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -71,7 +64,6 @@ main {
 
 /* -------------------- */
 .flexbox-item-2 {
-  min-height: 3.75em;
   flex-basis: 9.375em;
   flex-grow: 0;
   flex-shrink: 0;
@@ -84,7 +76,7 @@ main {
   justify-content: space-between;
 }
 
-.info-section-1 h3 {
+.info-section-1 h1 {
   color: white;
   font-family: var(--font-family);
   font-size: 1.5em;
@@ -103,7 +95,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 1.25em auto 1.875em auto;
+  margin: 1.25em auto 0 auto;
   gap: 2em;
 }
 
@@ -123,12 +115,12 @@ main {
   margin-right: 2.5em;
 } */
 
-.etherium-image-and-value h5 {
+.etherium-image-and-value h2 {
   font-size: 1em;
   color: aqua;
 }
 
-.timer-image-and-value p {
+.timer-image-and-value h2 {
   font-size: 1.1em;
   color: hsl(215, 51%, 70%);
 }
